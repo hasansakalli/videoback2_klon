@@ -1,0 +1,48 @@
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  width: 90%;
+  margin: auto;
+  padding-top: 2rem;
+}
+.video {
+  display: flex;
+}
+.images img {
+  width: 250px;
+}
+.content {
+  width: 100vw;
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(1fr 2fr);
+}
+
+.text {
+  position: absolute;
+  width: 300px;
+  top: 22%;
+  left: 51%;
+  transform: translate(-100%, -80%);
+  grid-area: 1;
+  align-items: flex-start;
+  font-size: 14px;
+  font-family: 'Times New Roman', Times, serif;
+}
+.images {
+  align-items: flex-end;
+  grid-area: 2;
+  display: flex;
+  justify-content: space-around;
+}
+#img2 {
+  padding-bottom: 2rem;
+}
+a {
+  color: black;
+}
